@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="blog.html">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo"></img>
+                <ul> <li><a href="C:\Users\chara\OneDrive\Documents\admin\beautiful-portfolio-website-main\blog.html">BLOG</a></li></ul>
+
+                    
+                   
+                
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="position">
+            <img src="images/background4.jpg" alt="" width="500" height="600"></div>
+            
+
+            <div class="header-text">
+                
+            <h1>Hello, <span><br>I'm Vaishnavi</br></span></h1>
+            
+             
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/dance.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My Name is Nimmagadda Vaishnavi.I am currently pursuing a <strong>PGDM</strong> in <strong>IPE</strong>(Institute Of Public Enterprise) aftter completing my under graduate degree in B.sc(MPC) from Nalanda Degree College in Nizamabad</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('Hobbies')">Hobbies</p>
+                       
+                        <p class="tab-links" onclick="openTab('Strength')">Strength</p>
+                        
+                        <p class="tab-links" onclick="openTab('Goals')">Goals</p>
+                    </div> 
+                     <div class="tab-contents" id="Hobbies">
+                        <p>Aside from Academics, I have passion for dancing and listening to music,Which helps me unwind and express my creativity </p>
+                     </div>
+                     <div class="tab-contents" id="Strength">
+                        <ol type="1">
+                          <li>Adaptability</li>
+                          <li>Self-Motivated</li>
+                          <li>Persistence </li>
+                        </ol>
+
+                  </div>
+
+                    <div class="tab-contents active-tab" id="Goals">
+                        <ul>
+                            <li><span>Short-term Goal</span><br>My Short-term objective is to secure a position with a top tier multinational coporation. Contribute my skills to a dynamic work environment</li>
+                            <li><span>Long-term Goal</span><br>My long-term goal is to establish my own small or medium size enterprise.</li>
+                           
+                        </ul>
+                    </div>
+                    
+
+                    
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------PORTFOLIO--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Currently pursuing</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ipe logo.jpg" alt="">
+                    <div class="layer">
+                        <h2>INSTITUTE OF ENTERPRISE </h2>
+                        
+                        <a href="https://www.ipeindia.org/M M"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+               
+              </div>
+              </div> 
+    </div>
+    
+
+    <!-- ----------CONTACT---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>nimmagaddavaishnavi87@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>7032938234</p>
+                    <div class="social-icons">
+                       
+                        <a href="https://www.linkedin.com/in/nimmagadda-vaishnavi-56a3a8282"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <h3>BLOG</h3>
+
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // JavaScript for handling the mobile navigation menu
+        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        document.querySelector('.fas.fa-times').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.remove('show');
+        });
+
+    </script>
+</body>
+
+</html>
